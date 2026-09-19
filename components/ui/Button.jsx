@@ -8,13 +8,13 @@ function Button({
 }) {
     const variants = {
         primary: 
-            "bg-white text-slate-950 hover:bg-slate-200",
+            "btn-primary",
 
         secondary: 
-            "border border-slate-700 text-white hover:bg-slate-800",
+            "btn-secondary",
 
         ghost: 
-            "text-slate-300 hover:bg-slate-800",
+            "btn-ghost",
     };
 
     const sizes = {
@@ -27,18 +27,9 @@ function Button({
         <button
             type={type}
             className={[
-                "inline-flex",
-                "items-center",
-                "justify-center",
-                "rounded-lg",
-                "font-medium",
-                "transition-colors",
-                "disabled:cursor-not-allowed",
-                "disabled:opacity-50",
-
+                "btn-base",
                 variants[variant],
                 sizes[size],
-
                 className,
             ].join(" ")}
             {...props}
