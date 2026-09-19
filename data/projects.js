@@ -7,7 +7,7 @@ export const projects = [
     description:
       "A responsive task management application built with React.",
 
-    technologies: [
+    tags: [
       "React",
       "Tailwind CSS",
       "JavaScript",
@@ -29,7 +29,7 @@ export const projects = [
     description:
       "A modern shopping interface with reusable components.",
 
-    technologies: [
+    tags: [
       "React",
       "Tailwind CSS",
     ],

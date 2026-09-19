@@ -5,10 +5,9 @@ import Button from "../ui/Button";
 function ConventionCard({
   title,
   description,
-  technologies,
+  tags,
   image,
-  demoUrl,
-  githubUrl,
+  demoUrl
 }) {
   return (
     <Card className="overflow-hidden">
@@ -31,12 +30,12 @@ function ConventionCard({
           {description}
         </p>
 
-        {/* Technologies */}
+        {/* tags */}
         <div className="mt-4 flex flex-wrap gap-2">
 
-          {technologies.map((technology) => (
-            <Badge key={technology}>
-              {technology}
+          {tags.map((tag) => (
+            <Badge key={tag}>
+              {tag}
             </Badge>
           ))}
 
@@ -50,7 +49,7 @@ function ConventionCard({
             target="_blank"
             rel="noreferrer"
           >
-            <Button size="sm">
+            <Button size="sm" variant="primary">
               View
             </Button>
           </a>
